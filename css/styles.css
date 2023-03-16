@@ -293,15 +293,15 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  border-radius: 50%;
+  transition-property: background;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .team-item-icon:hover,
 .team-item-icon:focus {
   background-color: var(--pressed-state-color);
-  border-radius: 50%;
-  transition-property: background;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 /* --------Customers------ */
 .customers {
@@ -326,13 +326,12 @@ body {
   justify-content: center;
   border: 1px solid var(--light-slate);
   border-radius: 4px;
-}
-.customers-item-link {
   fill: #afb1b8;
   transition-property: fill, border-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .customers-item-link:hover,
 .customers-item-link:focus {
   fill: var(--pressed-state-color);
@@ -387,14 +386,15 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-}
-.company-item-icon:hover,
-.company-item-icon:focus {
-  background-color: var(--green);
   border-radius: 50%;
   transition-property: background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.company-item-icon:hover,
+.company-item-icon:focus {
+  background-color: var(--green);
 }
 
 /*---------------- portfolio------------- */
